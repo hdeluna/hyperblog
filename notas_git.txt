@@ -1,0 +1,16 @@
+git -> sistema de control de versiones
+	Solamente dejar claro guardar los cambios, quién los hizo y poder volver a ellos en el pasado
+	
+git init -> empezar en una carpeta tu repositorio
+git add biografía.txt -> añadir un archivo
+git commit -m 'version 1' -> envía los cambios del archivo a la base de datos con un mensaje "version 1"
+git add . -> agregar todos los archivos que hayan cambiado en la carpeta en la que estamos en ese momento
+git status -> checar el estado de la base de datos de cambios
+git show -> mostrar todos los cambios históricos hechos
+git log biografía -> muestra los cambios históricos de un archivo
+git push -> enviar a un repositorio remoto
+
+Ramificación -> Puedes crear ramas en tu proyecto, lo que te permite trabajar en diferentes características o aspectos del mismo sin afectar el trabajo de los demás
+
+rm vs rm --cached -> significa que está todavía en la memoria ram (en el caché), todavía no guardado en la base de datos 
+	Util por si nos equivocamos
