@@ -4,6 +4,7 @@ git -> sistema de control de versiones
 git init -> empezar en una carpeta tu repositorio
 git add biografía.txt -> añadir un archivo
 git commit -m 'version 1' -> envía los cambios del archivo a la base de datos con un mensaje "version 1"
+	-am -> hacer commit a los archivos modificados QUE SE HAYAN AGREGADO PREVIAMENTE
 git add . -> agregar todos los archivos que hayan cambiado en la carpeta en la que estamos en ese momento
 git status -> checar el estado de la base de datos de cambios
 git show -> mostrar todos los cambios históricos hechos
@@ -37,4 +38,18 @@ git clone url -> con el link, traemos los archivos a nuestra carpeta
 git push -> mandar los archivos al servidor remoto, después de hacer un commit en el repositorio local
 git fetch -> traer una actualización de cambios menores y lo trae al repositorio local pero no lo copia en los archivos
 git merge -> para copiar en nuestros archivos, tenemos que fusionar la última versión en el repositorio local con mi versión actual
+	Puede o no terminar con la vida de la rama
+	Si estamos en una rama y hacemos merge del HEAD, unimos al merge con la rama, así que es mejor cambiar primero al master y ahora sí hacer merge
+	un merge es un commit, así que hay que ponerle un mensaje
 para hacer estos dos procesos al mismo tiempo, se hace un git pull
+
+git branch NOMBRE -> Crea una rama pero no nos cambia automáticamente a ella
+git checkout NOMBRE -> Cambia a la rama con ese nombre
+
+##### Llaves públicas y llaves privadas #####
+
+Algoritmo también llamado cifrado asimétrico de un solo camino
+Las llaves están vinculadas matemáticamente de tal manera que śolo la llave pŕivada puede abrir la llave pública
+Se manda la llave pública para descifrar la llave privada
+Con la llave pública se cifra el mensaje que querramos enviar 
+Sólo con la llave privada podremos descifrar el mensaje 
