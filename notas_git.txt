@@ -53,3 +53,20 @@ Las llaves están vinculadas matemáticamente de tal manera que śolo la llave p
 Se manda la llave pública para descifrar la llave privada
 Con la llave pública se cifra el mensaje que querramos enviar 
 Sólo con la llave privada podremos descifrar el mensaje 
+
+Las llaves ssh son PERSONALES, no por proyecto o por repositorio
+Para generar llaves SSH locales:
+	ssh-keygen -t rsa -b 4096 -C "haydeedelunatw@gmail.com"
+	passphrase: recomendado poner una frase para mayor seguridad, pero en este caso, no pondremos
+	
+No es suficiente generarla, hay que agregarla al sistema
+	eval $(ssh-agent -s) -> ver si tenemos programa para evlauar esas llaves
+	ssh-add ~/.ssh/id_rsa -> agregar la llave privada
+	
+##### GITHUB #####
+Cuando vemos "blame" en la forma de ver los archivos de github, nos dice quién hizo cada archivo
+git remote add origin https://github.com/hdeluna/hyperblog.git -> agregar el acceso remoto a nuestro repositorio
+git push origin master -> enviar a la rama main del github
+git pull origin main --allow-unrelated-histories -> hacer merge con la rama main 
+
+
