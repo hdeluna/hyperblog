@@ -33,13 +33,13 @@ Por otro lado, git rm es un comando que nos ayuda a eliminar archivos de Git sin
 
 ##### Para trabajar con servidores remotos #####
 git clone url -> con el link, traemos los archivos a nuestra carpeta
-	se trae una copia del master al directorio del trabajo 
+	se trae una copia del main al directorio del trabajo 
 	y se crea la base de datos de todos los datos históricos del proyecto en el repositorio local
 git push -> mandar los archivos al servidor remoto, después de hacer un commit en el repositorio local
 git fetch -> traer una actualización de cambios menores y lo trae al repositorio local pero no lo copia en los archivos
 git merge -> para copiar en nuestros archivos, tenemos que fusionar la última versión en el repositorio local con mi versión actual
 	Puede o no terminar con la vida de la rama
-	Si estamos en una rama y hacemos merge del HEAD, unimos al merge con la rama, así que es mejor cambiar primero al master y ahora sí hacer merge
+	Si estamos en una rama y hacemos merge del HEAD, unimos al merge con la rama, así que es mejor cambiar primero al main y ahora sí hacer merge
 	un merge es un commit, así que hay que ponerle un mensaje
 para hacer estos dos procesos al mismo tiempo, se hace un git pull
 
@@ -66,7 +66,7 @@ No es suficiente generarla, hay que agregarla al sistema
 ##### GITHUB #####
 Cuando vemos "blame" en la forma de ver los archivos de github, nos dice quién hizo cada archivo
 git remote add origin https://github.com/hdeluna/hyperblog.git -> agregar el acceso remoto a nuestro repositorio
-git push origin master -> enviar a la rama main del github
+git push origin main -> enviar a la rama main del github
 git pull origin main --allow-unrelated-histories -> hacer merge con la rama main 
 
 
